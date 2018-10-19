@@ -66,13 +66,13 @@ $(function(){
   $("#result-well").show();
   if (ruby > php+java+cnet) {
     $("p#result").text("Ruby/Rails")();
-  }
-  if (php > ruby+java+cnet) {
+  } else if (php > ruby+java+cnet) {
     $("p#result").text("PHP/Drupal");
-  if (java > php+ruby+cnet) {
+  } else if (java > php+ruby+cnet) {
     $("p#result").text("Java/Android");
-  if (cnet > java+php+ruby);
+  } else {
     $("p#result").text("C#/.Net");
-  })
+  }
 
+});
 });
