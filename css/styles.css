@@ -42,3 +42,7 @@ h4 {
 html {
   padding: 10px;
 }
+input {
+  background-color: #CFFFA4;
+  border: solid #28a745;
+}
