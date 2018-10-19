@@ -1,11 +1,11 @@
 $(function(){
   $("#track-app").submit(function(event){
     event.preventDefault();
-    var interestinput = $("select#interest").val();
-    var companytypeinput = $("select#companytype").val();
-    var attractiveinput = $("select#attractive").val();
-    var companynameinput = $("select#companyname").val();
-    var languageinput = $("select#language").val();
+    var interestinput = $("#interest").val();
+    var companytypeinput = $("#companytype").val();
+    var attractiveinput = $("#attractive").val();
+    var companynameinput = $("#companyname").val();
+    var languageinput = $("#language").val();
 
     var ruby = 0;
     var php = 0;
@@ -65,13 +65,14 @@ $(function(){
 
   $("#result-well").show();
   if (ruby > php+java+cnet) {
-    $("p#answer").text("Ruby/Rails");
-  } else if (php > ruby+java+cnet) {
-    $("p#answer").text("PHP/Drupal");
-  } else if (java > php+ruby+cnet) {
-    $("p#answer").text("Java/Android");
-  } else if (cnet > java+php+ruby);
-    $("p#answer").text("C#/.Net");
+    $("p#result").text("Ruby/Rails")();
+  }
+  if (php > ruby+java+cnet) {
+    $("p#result").text("PHP/Drupal");
+  if (java > php+ruby+cnet) {
+    $("p#result").text("Java/Android");
+  if (cnet > java+php+ruby);
+    $("p#result").text("C#/.Net");
   })
 
 });
