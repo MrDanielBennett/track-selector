@@ -6,6 +6,7 @@ $(function(){
     var attractiveinput = $("#attractive").val();
     var companynameinput = $("#companyname").val();
     var languageinput = $("#language").val();
+    var name = $("#name").val();
 
     var ruby = 0;
     var php = 0;
@@ -64,6 +65,7 @@ $(function(){
   }
 
   $("#result-well").show();
+  $("span#name").text(name)
   if (ruby > php+java+cnet) {
     $("p#result").text("Ruby/Rails")();
   } else if (php > ruby+java+cnet) {

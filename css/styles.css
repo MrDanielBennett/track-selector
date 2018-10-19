@@ -16,6 +16,7 @@
   background-color: #5cb85c;
   border: solid #28a745;
   margin-top: 10px;
+  text-align: center;
 }
 button {
   background-color: #CFFFA4;
@@ -36,4 +37,8 @@ h4 {
 }
 #result {
   font-size: 20px;
+  color: white;
+}
+html {
+  padding: 10px;
 }

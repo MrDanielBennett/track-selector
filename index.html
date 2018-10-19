@@ -18,6 +18,10 @@
 
       <form id="track-app">
         <div class="form-group">
+          <label for="track-app">Your name:</label>
+          <input id="name" type="text">
+        </div>
+        <div class="form-group">
           <label for="track-app">What are you interested in?</label>
           <select id="interest">
             <option value="ruby1">Interactive Web Applications</option>
@@ -30,7 +34,7 @@
           <label for="track-app">What kind of company would you like to work for?</label>
           <select id="companytype">
             <option value="ruby2">Start up</option>
-            <option value="php2">Fast paces Agency</option>
+            <option value="php2">Fast paced Agency</option>
             <option value="java2">Enterprise</option>
             <option value="cnet2">Large company</option>
           </select>
@@ -55,7 +59,6 @@
             <option value="cnet4">InComm</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="track-app">Which of these other languages interest you?</label>
           <select id="language">
@@ -70,8 +73,9 @@
       </form>
       <div id="result-well" class="well">
         <div class="result">
-          <h4>Based on your answers it looks like the best track at Epicodus would be:</h4>
+          <h4>Hey <span id="name"></span>, based on your answers it looks like the best track at Epicodus would be:</h4>
           <p id="result"></p>
+          <p>To learn more about the tracks click <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here</a>!</p>
         </div>
       </div>
     </div>
