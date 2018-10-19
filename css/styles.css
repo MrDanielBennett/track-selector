@@ -31,3 +31,9 @@ select {
   background-color: #CFFFA4;
   border: solid #28a745;
 }
+h4 {
+  font-weight: bold;
+}
+#result {
+  font-size: 20px;
+}
