@@ -1,6 +1,33 @@
-/* #result-well {
+.container {
+  background-color: #CFFFA4;
+  border: solid #28a745;
+  border-radius: 5px;
+}
+#result-well {
   display: none;
-} */
-#rubyrails {
-  display: none;
+  margin-top: 10px;
+  background-color: #5cb85c;
+}
+.well {
+  background-color: #5cb85c;
+  border: solid #28a745;
+}
+.jumbotron {
+  background-color: #5cb85c;
+  border: solid #28a745;
+  margin-top: 10px;
+}
+button {
+  background-color: #CFFFA4;
+  border-color: #28a745;
+  color: #242424;
+}
+p {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #424242;
+}
+select {
+  background-color: #CFFFA4;
+  border: solid #28a745;
 }
